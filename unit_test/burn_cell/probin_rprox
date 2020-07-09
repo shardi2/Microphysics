@@ -1,6 +1,6 @@
 &extern
 
-  run_prefix = "react_aprox13_"
+  run_prefix = "react_rprox_"
 
   small_temp = 1d5
   small_dens = 1d5
@@ -26,18 +26,15 @@
   density       = 1.d6
   temperature   = 3.d9
 
-  X1  = 1.0d0
-  X2  = 0.0d0
-  X3  = 0.0d0
+  X1  = 0.0d0
+  X2  = 0.01d0
+  X3  = 0.01d0
   X4  = 0.0d0
   X5  = 0.0d0
   X6  = 0.0d0
   X7  = 0.0d0
   X8  = 0.0d0
-  X9  = 0.0d0
-  X10 = 0.0d0
-  X11 = 0.0d0
-  X12 = 0.0d0
-  X13 = 0.0d0
+  X9  = 0.28d0
+  X10 = 0.7d0 
 
 /
