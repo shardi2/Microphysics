@@ -1,16 +1,19 @@
 
 
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8">
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Unit Tests &mdash; StarKiller Microphysics 20.05
- documentation</title>
+  <title>Unit Tests &mdash; StarKiller Microphysics  documentation</title>
   
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
 
   
   
@@ -18,7 +21,9 @@
   
 
   
-  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
@@ -27,17 +32,12 @@
         <script src="_static/doctools.js"></script>
         <script src="_static/language_data.js"></script>
         <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
         <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"rhozero": "{\\rho_0}", "pizero": "{\\pi_0}", "pizeroone": "{\\pi_0^{(1)}}", "pizerotwo": "{\\pi_0^{(2)}}", "gammabar": "{\\overline{\\Gamma}_1}", "ptl": "{{\\partial}}", "eb": "{{\\bf e}}", "fb": "{{\\bf f}}", "ib": "{{\\bf i}}", "Ub": "{{\\bf U}}", "Vb": "{{\\bf V}}", "xb": "{{\\bf x}}", "ut": "{\\tilde{u}}", "vt": "{\\tilde{v}}", "wt": "{\\tilde{w}}", "Ubt": "{\\widetilde{\\Ub}}", "edge": "{\\rm EDGE}", "mac": "{\\rm MAC}", "trans": "{\\rm TRANS}", "nablab": "{\\mathbf{\\nabla}}", "cdotb": "{\\mathbf{\\cdot}}", "half": "{\\frac{1}{2}}", "myhalf": "{\\frac{1}{2}}", "nph": "{{n + \\myhalf}}", "nmh": "{{n - \\myhalf}}", "Hext": "{{H_{\\rm ext}}}", "Hnuc": "{{H_{\\rm nuc}}}", "kth": "{k_{\\rm th}}", "pred": "{{\\rm pred}}", "Sbar": "{\\overline{S}}", "inp": "{\\mathrm{in}}", "initp": "{\\mathrm{init}}", "outp": "{\\mathrm{out}}", "uadv": "{\\widetilde{\\mathbf{U}}^{\\mathrm{ADV}}}", "uadvone": "{\\widetilde{\\mathbf{U}}^{\\mathrm{ADV},\\star}}", "uadvonedag": "{\\Ubt^{\\mathrm{ADV},\\dagger,\\star}}", "uadvtwo": "{\\widetilde{\\mathbf{U}}^{\\mathrm{ADV}}}", "uadvtwodag": "{\\Ubt^{\\mathrm{ADV},\\dagger}}", "uadvsdcstar": "{\\mathbf{U}^{\\mathrm{ADV},\\star}}", "uadvsdcpred": "{\\mathbf{U}^{\\mathrm{ADV},\\mathrm{pred}}}", "uadvsdc": "{\\mathbf{U}^{\\mathrm{ADV}}}", "dt": "{\\Delta t}", "dr": "{\\Delta r}", "etarho": "{\\eta_{\\rho}}", "etarhoec": "{\\etarho^{\\rm ec}}", "etarhocc": "{\\etarho^{\\rm cc}}", "etarhoflux": "{\\etarho^{\\rm flux}}", "divetarho": "{\\nabla\\cdot(\\etarho\\eb_r)}", "ow": "{\\overline{w}_0}", "dw": "{\\delta w_0}", "thalf": "{\\sfrac{3}{2}}", "rhop": "{{\\rho^{\\prime}}}", "omegadot": "{\\dot{\\omega}}", "er": "{\\mathbf{e}_r}", "ex": "{\\mathbf{e}_x}", "ey": "{\\mathbf{e}_y}", "ez": "{\\mathbf{e}_z}", "Omegab": "{{\\bf \\Omega}}", "rb": "{{\\bf r}}", "isotm": ["{{}^{#2}\\mathrm{#1}}", 2], "edot": "{{{\\dot{e}_\\mathrm{nuc}}}}", "enuc": "{{{{e}_\\mathrm{nuc}}}}", "edotnu": "{{{\\dot{e}_\\nu}}}", "rt": "{\\tilde{r}_0}", "rhob": "{\\ensuremath{\\rho_\\mathrm{base}}}", "Tb": "{\\ensuremath{T_\\mathrm{base}}}", "gcc": "{\\mathrm{g~cm^{-3} }}", "pb": "{p_\\mathrm{base}}", "qburn": "{q_\\mathrm{burn}}", "Uc": "{{\\boldsymbol{\\mathcal{U}}}}", "Fb": "{\\mathbf{F}}", "Sc": "{\\mathbf{S}}", "Shydro": "{{{\\bf S}^{\\mathrm{hydro}}}}", "Rb": "{{\\bf R}}", "Rq": "{{\\bf R}}", "Adv": ["{{\\left [\\boldsymbol{\\mathcal{A}} \\left(#1\\right)\\right]}}", 1], "Advs": ["{{\\boldsymbol{\\mathcal{A}} \\left(#1\\right)}}", 1], "Sdot": "{\\dot{S}}"}}, "tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Spectral Deferred Corrections" href="sdc.html" />
@@ -54,8 +54,9 @@
         <div class="wy-side-nav-search" >
           
 
+
           
-            <a href="index.html" class="icon icon-home"> StarKiller Microphysics
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> StarKiller Microphysics
           
 
           
@@ -63,11 +64,6 @@
 
           
             
-            
-              <div class="version">
-                20.05
-
-              </div>
             
           
 
@@ -81,8 +77,13 @@
 </div>
 
           
+    <div class="branch">
+        Branch: <a href="./unit_tests.html">main</a> | <a href="./dev/unit_tests.html">development</a>
+    </div>
+
         </div>
 
+        
         <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
           
             
@@ -98,6 +99,7 @@
 <li class="toctree-l1"><a class="reference internal" href="rp_intro.html">Runtime parameters</a></li>
 <li class="toctree-l1"><a class="reference internal" href="eos.html">Equations of State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="networks.html">Reaction Networks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="integrators.html">Integrating a Network</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transport.html">Transport Coefficients</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cxx.html">C++ interfaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gpu.html">GPUs</a></li>
@@ -105,9 +107,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#comprehensive-unit-tests">Comprehensive Unit Tests</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#eos-test">EOS test</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#network-test">Network test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#aprox-rates-test">Aprox Rates Test</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#screening-test">Screening Test</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#individual-network-tests">Individual Network Tests</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#burn-cell"><code class="docutils literal notranslate"><span class="pre">burn_cell</span></code></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#getting-started">Getting Started</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#input-file">Input File</a></li>
@@ -124,6 +127,7 @@
             
           
         </div>
+        
       </div>
     </nav>
 
@@ -162,7 +166,7 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="index.html">Docs</a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
       <li>Unit Tests</li>
     
@@ -211,16 +215,24 @@
 <h1>Unit Tests<a class="headerlink" href="#unit-tests" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="comprehensive-unit-tests">
 <h2>Comprehensive Unit Tests<a class="headerlink" href="#comprehensive-unit-tests" title="Permalink to this headline">¶</a></h2>
-<p>There are a few unit tests in Microphysics that operate on a generic EOS
-or reaction network. To allow these to compile independent of any
-application code (e.g., Maestro or Castro), copies of the EOS
-driver <code class="docutils literal notranslate"><span class="pre">eos.f90</span></code> and network interface <code class="docutils literal notranslate"><span class="pre">network.f90</span></code> are
-provided in <code class="docutils literal notranslate"><span class="pre">Microphysics/unit_test/</span></code>.</p>
+<p>There are a few unit tests in Microphysics that operate on a generic
+EOS, reaction network, conductivity, or some smaller component to
+Microphysics.  Many of these tests exercise the main interfaces in
+<code class="docutils literal notranslate"><span class="pre">Microphysics/interfaces/</span></code> and the code that those call.</p>
 <p>These tests compile using the AMReX build system, which assumes that
-main is in C++, so each have a <code class="docutils literal notranslate"><span class="pre">main.cpp</span></code> driver.  The file
-<code class="docutils literal notranslate"><span class="pre">Microphysics/Make.Microphysics</span></code> provides the macros necessary to build
-the executable. Runtime parameters are parsed in the same fashion as
-in the application codes, using the <code class="docutils literal notranslate"><span class="pre">write_probin.py</span></code> script.</p>
+main is in C++, so each have a <code class="docutils literal notranslate"><span class="pre">main.cpp</span></code> driver.  The files
+<code class="docutils literal notranslate"><span class="pre">Microphysics/Make.Microphysics</span></code> and
+<code class="docutils literal notranslate"><span class="pre">Microphysics/Make.Microphysics_extern</span></code> provide the macros necessary
+to build the executable. Runtime parameters are parsed in the same
+fashion as in the application codes, using the <code class="docutils literal notranslate"><span class="pre">write_probin.py</span></code>
+script.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Most of these tests are written such that the exercise both the C++
+and Fortran implementations of the Microphysics, via the <code class="docutils literal notranslate"><span class="pre">do_cxx</span></code>
+runtime parameter.</p>
+<p>Most of these tests work with MPI+OpenMP and CUDA</p>
+</div>
 <div class="section" id="eos-test">
 <h3>EOS test<a class="headerlink" href="#eos-test" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">Microphysics/unit_test/test_eos/</span></code> is a unit test for the equations
@@ -279,8 +291,13 @@ tests whether the EOS is threadsafe.</p>
 </pre></div>
 </div>
 <p>Examining the output (an AMReX plotfile) will show you how big the
-errors are. You can use the <code class="docutils literal notranslate"><span class="pre">AMReX/Tools/Postprocessing/</span></code> tool
+errors are. You can use the <code class="docutils literal notranslate"><span class="pre">amrex/Tools/Plotfile/</span></code> tool
 <code class="docutils literal notranslate"><span class="pre">fextrema</span></code> to display the maximum error for each variable.</p>
+<p>To switch between testing the Fortran and C++ implementations of the EOS,
+use <code class="docutils literal notranslate"><span class="pre">do_cxx</span></code>, e.g., to use the C++ implementation, you would run as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">./</span><span class="n">main3d</span><span class="o">.</span><span class="n">gnu</span><span class="o">.</span><span class="n">ex</span> <span class="n">inputs_eos</span> <span class="n">do_cxx</span><span class="o">=</span><span class="mi">1</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="network-test">
 <h3>Network test<a class="headerlink" href="#network-test" title="Permalink to this headline">¶</a></h3>
@@ -288,7 +305,8 @@ errors are. You can use the <code class="docutils literal notranslate"><span cla
 reaction networks in Microphysics. It sets up a cube of data, with
 <span class="math notranslate nohighlight">\(\rho\)</span>, <span class="math notranslate nohighlight">\(T\)</span>, and <span class="math notranslate nohighlight">\(X_k\)</span> varying along the three
 dimensions (as a <span class="math notranslate nohighlight">\(16^3\)</span> domain), and then calls the EOS in each
-zone.</p>
+zone.  This test does the entire ODE integration of the network for
+each zone.</p>
 <p>The state in each zone of our data cube is determined by the runtime
 parameters <code class="docutils literal notranslate"><span class="pre">dens_min</span></code>, <code class="docutils literal notranslate"><span class="pre">dens_max</span></code>, <code class="docutils literal notranslate"><span class="pre">temp_min</span></code>, and <code class="docutils literal notranslate"><span class="pre">temp_max</span></code>
 for <span class="math notranslate nohighlight">\((\rho, T)\)</span>. Because each network carries different
@@ -300,34 +318,37 @@ Only one primary species varies at a time. The non-primary species
 will be set equally to share whatever fraction of 1 is not accounted
 for by the primary species mass fractions.</p>
 <p>This test calls the network on each zone, running for a time
-tmax. The full state, including new mass fractions and energy
+<code class="docutils literal notranslate"><span class="pre">tmax</span></code>. The full state, including new mass fractions and energy
 release is output to a AMReX plotfile.</p>
 <p>You can compile for a specific integrator (e.g., <code class="docutils literal notranslate"><span class="pre">BS</span></code>) or
 network (e.g., <code class="docutils literal notranslate"><span class="pre">aprox13</span></code>) as:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">NETWORK_DIR</span><span class="o">=</span><span class="n">aprox13</span> <span class="n">INTEGRATOR_DIR</span><span class="o">=</span><span class="n">BS</span> <span class="o">-</span><span class="n">j</span> <span class="mi">4</span>
 </pre></div>
 </div>
-<p>The loop over the burner is marked up for both OpenMP and OpenACC and
+<p>The loop over the burner is marked up for OpenMP and CUDA and
 therefore this test can be used to assess threadsafety of the burners
 as well as to optimize the GPU performance of the burners.</p>
+<p>This works for both the Fortran and C++ implementations (via <code class="docutils literal notranslate"><span class="pre">do_cxx</span></code>).</p>
 </div>
+<div class="section" id="aprox-rates-test">
+<h3>Aprox Rates Test<a class="headerlink" href="#aprox-rates-test" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">Microphysics/unit_test/test_aprox_rates</span></code> just evaluates the
+instantaneous reaction rates in <code class="docutils literal notranslate"><span class="pre">Microphysics/rates/</span></code> used by the
+<code class="docutils literal notranslate"><span class="pre">iso7</span></code>, <code class="docutils literal notranslate"><span class="pre">aprox13</span></code>, <code class="docutils literal notranslate"><span class="pre">aprox19</span></code>, and <code class="docutils literal notranslate"><span class="pre">aprox21</span></code> reaction networks.
+This uses the same basic ideas as the tests above—a cube of data is
+setup and the rates are evaluated using each zone’s thermodynamic
+conditions.  This test is not really network specific—it tests all
+of the available rates.</p>
+<p>This works for both the Fortran and C++ implementations (via <code class="docutils literal notranslate"><span class="pre">do_cxx</span></code>).</p>
 </div>
-<div class="section" id="individual-network-tests">
-<h2>Individual Network Tests<a class="headerlink" href="#individual-network-tests" title="Permalink to this headline">¶</a></h2>
-<p>Many of the networks have a subdirectory test/ (e.g.
-<code class="docutils literal notranslate"><span class="pre">Microphysics/networks/triple_alpha_plus_cago/test/</span></code>). There are
-usually 3 different drivers there that can be used to evaluate the
-network or Jacobian on a single state:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">eval.f90</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">testburn.f90</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">testjacobian.f90</span></code></p></li>
-</ul>
-<p>These all use the F90 AMReX build system and the macros in
-<code class="docutils literal notranslate"><span class="pre">GMicrophysics.mak</span></code> to build the executable. To make
-individual tests you can use the programs variable, e.g.,:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">programs</span><span class="o">=</span><span class="nb">eval</span>
-</pre></div>
+<div class="section" id="screening-test">
+<h3>Screening Test<a class="headerlink" href="#screening-test" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">Microphysics/unit_test/test_screening</span></code> just evaluates the screening
+routine, using the <code class="docutils literal notranslate"><span class="pre">aprox21</span></code> reaction network.
+This uses the same basic ideas as the tests above—a cube of data is
+setup and the rates are evaluated using each zone’s thermodynamic
+conditions.</p>
+<p>This works for both the Fortran and C++ implementations (via <code class="docutils literal notranslate"><span class="pre">do_cxx</span></code>).</p>
 </div>
 </div>
 <div class="section" id="burn-cell">
@@ -443,11 +464,19 @@ the temperature and the energy generation rate as a function of time.</p>
 
   <div role="contentinfo">
     <p>
+        
         &copy; Copyright 2018, StarKiller Development Team
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -459,7 +488,6 @@ the temperature and the energy generation rate as a function of time.</p>
   </div>
   
 
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
@@ -469,7 +497,8 @@ the temperature and the energy generation rate as a function of time.</p>
   
   
     
-   
+    
+
 
 </body>
 </html>
